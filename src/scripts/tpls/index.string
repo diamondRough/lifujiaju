@@ -1,0 +1,44 @@
+<div class="m-index" id="m-index">
+	<header>
+		<ul>
+			<li class="yo-ico">
+				<span></span>
+			</li>
+			<li class="yo-ico">
+				<a href="javascript:;"><i class="yo-ico">&#xe613;</i></a>
+			</li>
+		</ul>
+	</header>
+	<nav>
+		<ul>
+		  <li v-on:click="changeTab(index)" :class="{active: index==navIndex}" v-for="(item, index) in nav">{{item}}</li>
+		</ul>
+	</nav>
+	<section>
+
+	</section>
+	<footer>
+		<ul>
+			<li class="active">
+				<i class="yo-ico">&#xe60a;</i>
+				<b>首页</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe681;</i>
+				<b>全部产品</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe77c;</i>
+				<b>闲逛</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe68c;</i>
+				<b>购物车</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe623;</i>
+				<b>账户中心</b>
+			</li>
+		</ul>
+	</footer>
+</div>
